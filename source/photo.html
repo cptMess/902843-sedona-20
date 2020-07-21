@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <a class="page-header__logo">
+      <img src="img/logotype-mobile.svg.svg" width="84" height="101" alt="Седона">
+    </a>
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="site-list__item site-list__item--active">
+            <a href="#">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Фото и видео</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">Форма отзыва</a>
+          </li>
+          <li class="site-list__item">
+            <a href="#">HTML-Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <div class="lead page-main__lead">
+      <h1 class="lead__caption">Фото и видео</h1>
+      <p class="lead__text">Не можете решиться на путешествие из-за курса? <br>Фотографии помогут вам забыть о политике
+        и экономике.</p>
+    </div>
+    <section class="gallery">
+      <ul class="gallery__list">
+        <li class="gallery__item photo-card">
+          <a class="photo-card__img">
+            <img src="https://via.placeholder.com/280x280">
+          </a>
+          <div class="photo-card__wrap">
+            <div class="photo-card__caption-wrap">
+              <b class="photo-card__caption">Неродные просторы</b>
+              <p class="photo-card__autor">Автор фото: Борис</p>
+            </div>
+            <a class="photo-card__btn" href="#">
+              <span class="like-btn__counter">1350</span>
+            </a>
+          </div>
+        </li>
+
+        <li class="gallery__item photo-card">
+          <a class="photo-card__img"">
+            <img src=" https://via.placeholder.com/280x280">
+          </a>
+          <div class="photo-card__wrap">
+            <div class="photo-card__caption-wrap">
+              <b class="photo-card__caption">Местная растительность</b>
+              <p class="photo-card__autor">Автор фото: Сергей</p>
+            </div>
+            <a class="photo-card__btn like-btn" href="#">
+              <span class="like-btn__counter">143</span>
+            </a>
+          </div>
+        </li>
+        <li class="gallery__item photo-card">
+          <a class="photo-card__img">
+            <img src="https://via.placeholder.com/280x280">
+          </a>
+          <div class="photo-card__wrap">
+            <div class="photo-card__caption-wrap">
+              <b class="photo-card__caption">Дорога на север</b>
+              <p class="photo-card__autor">Автор фото: Пётр</p>
+            </div>
+            <a class="photo-card__btn like-btn" href="#">
+              <svg class="like-btn__icon" width="22" height="20">
+                <use xlink:href="#inline-icon-like"></use>
+              </svg>
+              <span class="like-btn__counter">96</span>
+            </a>
+          </div>
+        </li>
+        <li class="gallery__item photo-card">
+          <a class="photo-card__img">
+            <img src="https://via.placeholder.com/280x280">
+          </a>
+          <div class="photo-card__wrap">
+            <div class="photo-card__caption-wrap">
+              <b class="photo-card__caption">Мост дьявола</b>
+              <p class="photo-card__autor">Автор фото: Антон</p>
+            </div>
+            <a class="photo-card__btn like-btn" href="#">
+              <svg class="like-btn__icon" width="22" height="20">
+                <use xlink:href="#inline-icon-like"></use>
+              </svg>
+              <span class="like-btn__counter">254</span>
+            </a>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <!--Соц.сети-->
+    <section class="social page-footer__social">
+      <b class="social__tag">#visitsedona</b>
+      <ul class="social__list">
+        <li class="social__item social__item--tw">
+          <a href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="social__item social__item--fb">
+          <a href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item social__item--youtube">
+          <a href="#">
+            <span class="visually-hidden">Ютьюб</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!--Копирайт-->
+    <section class="copyright page-footer__copyright">
+      <p class="copyright__text">Разработано</p>
+    </section>
+  </footer>
+
+</body>
+
+</html>
