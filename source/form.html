@@ -9,103 +9,40 @@
 
 <body>
   <header class="page-header">
-    <a class="page-header__logo">
-      <img src="img/logotype-mobile.svg.svg" width="84" height="101" alt="Седона">
-    </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="main-nav__wrapper">
         <ul class="main-nav__list">
-          <li class="site-list__item site-list__item--active">
-            <a href="#">Главная</a>
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a href="#">Фото и видео</a>
+          <li class="main-nav__item">
+            <a href="photo.html">Фото и видео</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item main-nav__item--active">
             <a href="#">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="main-nav__item">
             <a href="#">HTML-Academy</a>
           </li>
         </ul>
       </div>
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logotype-mobile.svg.svg" width="84" height="101" alt="Седона">
+      </a>
     </nav>
   </header>
 
   <main class="page-main">
     <div class="lead page-main__lead">
       <h1 class="lead__caption">Оставьте свой отзыв</h1>
-      <p class="lead__text">Помогите нашим отелям стать лучше!<br>
-        оставьте отзыв о них, а также о<br>
+      <p class="lead__text">Помогите нашим отелям стать лучше!
+        оставьте отзыв о них, а также о
         посещенных вами достопримечательностях</p>
     </div>
-    <form action="https://echo.htmlacademy.ru" method="post" class="testimonial-form">
-      <!--Фамилия, имя, отчество-->
-      <fieldset class="testimonial-form__group">
-        <div class="testimonial-form__legend">Представьтесь:</div>
-        <label class="testimonial-form__label" for="first-name">Имя<sup>*</sup>:</label>
-        <input type="text" name="first-name" placeholder="Петр" id="first-name" required>
-        <label class="testimonial-form__label" for="surname">Фамилия<sup>*</sup>:</label>
-        <input type="text" name="surname" placeholder="Иванов" id="surname" required>
-        <label class="testimonial-form__label" for="patronymic">Отчество<sup>*</sup>:</label>
-        <input type="text" name="patronymic" placeholder="Александрович" id="patronymic">
-      </fieldset>
-      <!--Контакты-->
-      <fieldset class="testimonial-form__group">
-        <div class="testimonial-form__legend">Контактная информация:</div>
-        <div class="testimonial-form__flex-wrap">
-          <label class="testimonial-form__label" for="user-phone">Контактный телефон<sup>*</sup>:</label>
-          <div class="testimonial-form__input">
-            <input type="tel" name="user-phone" placeholder="Введите телефон" id="user-phone" required>
-          </div>
-          <label class="testimonial-form__label" for="user-email">Электронная почта<sup>*</sup>:</label>
-          <div class="testimonial-form__input">
-            <input type="email" name="user-email" placeholder="Введите e-mail" id="user-email" required>
-          </div>
-        </div>
-      </fieldset>
-      <!--Впечатления-->
-      <fieldset class="testimonial-form__group">
-        <div class="testimonial-form__legend">Ваше общее впечатление:</div>
-        <div class="testimonial-form__flex-wrap">
-          <input class="visually-hidden" type="radio" name="filling" value="positive" id="radio-positive" checked>
-          <label class="testimonial-form__label" for="radio-positive">Скорее положительное</label>
-          <input class="visually-hidden testimonial-form__input" type="radio" name="filling" value="negative"
-            id="radio-negative">
-          <label class="testimonial-form__label" for="radio-negative">Скорее отрицательное</label>
-          <input class="visually-hidden testimonial-form__input" type="radio" name="filling" value="no-answer"
-            id="radio-no-answer">
-          <label class="testimonial-form__label" for="radio-no-answer">Затрудняюсь ответить</label>
-        </div>
-      </fieldset>
-      <!--Достопремечательности-->
-      <fieldset class="testimonial-form__group">
-        <div class="testimonial-form__legend">Посещенные <br>достопримечательности:</div>
-        <div class="testimonial-form__flex-wrap">
-          <input class="visually-hidden" type="checkbox" name="bridge" value="bridge" id="checkbox-bridge" checked>
-          <label class="testimonial-form__label" for="checkbox-bridge">Мост Дьявола</label>
-          <input class="visually-hidden" type="checkbox" name="park" value="park" id="checkbox-park" checked>
-          <label class="testimonial-form__label" for="checkbox-park">Слайд-парк</label>
-          <input class="visually-hidden" type="checkbox" name="mountain" value="mountain" id="checkbox-mountain"
-            checked>
-          <label class="testimonial-form__label" for="checkbox-mountain">Гора-Колокол</label>
-          <input class="visually-hidden" type="checkbox" name="red-rocks" value="red-rocks" id="checkbox-red-rocks">
-          <label class="testimonial-form__label" for="checkbox-red-rocks">Красные скалы</label>
-        </div>
-      </fieldset>
-      <!--Эмоции-->
-      <fieldset class="testimonial-form__group">
-        <label class="testimonial-form__label" for="message-area">Опишите свои эмоции:</label>
-        <textarea name="message" rows="5" placeholder="Опишите подробно все свои восторги" id="message-area"></textarea>
-      </fieldset>
-      <div class="testimonial-form__btn-wrap">
-        <button class="testimonial-form__button btn" type="submit">Отправить отзыв</button>
-        <span class="testimonial-form__note">* — обязательные поля</span>
-      </div>
-    </form>
+
   </main>
   <footer class="page-footer">
     <!--Соц.сети-->
@@ -131,7 +68,7 @@
     </section>
     <!--Копирайт-->
     <section class="copyright page-footer__copyright">
-      <p class="copyright__text">Разработано</p>
+      <a href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
     </section>
   </footer>
 </body>
