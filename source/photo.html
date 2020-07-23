@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Photo</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a href="index.html">Главная</a>
+          </li>
+          <li class="main-nav__item  main-nav__item--active">
+            <a href="#">Фото и видео</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="form.html">Форма отзыва</a>
+          </li>
+          <li class="main-nav__item">
+            <a href="#">HTML-Academy</a>
+          </li>
+        </ul>
+      </div>
+      <a class="page-header__logo" href="index.html">
+        <!--Тут будет логотип-->
+      </a>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <div class="lead page-main__lead">
+      <h1 class="lead__caption">Фото и видео</h1>
+      <p class="lead__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
+        и экономике.</p>
+    </div>
+    <section class="gallery">
+      <ul class="gallery__list">
+        <li class="gallery__item photo-card">
+          <a class="photo-card__img" href="#">
+            <img src="https://via.placeholder.com/280x280" alt="фото Народные просторы">
+          </a>
+          <div class="photo-card__wrap">
+            <div class="photo-card__caption-wrap">
+              <b class="photo-card__caption">Неродные просторы</b>
+              <p class="photo-card__autor">Автор фото: Борис</p>
+            </div>
+            <button class="photo-card__btn like-btn">
+              <span class="like-btn__counter">1350</span>
+            </button>
+          </div>
+        </li>
+
+        <li class="gallery__item photo-card">
+          <a class="photo-card__img" href="#">
+            <img src=" https://via.placeholder.com/280x280" alt="фото Местная растительность">
+          </a>
+          <div class="photo-card__wrap">
+            <div class="photo-card__caption-wrap">
+              <b class="photo-card__caption">Местная растительность</b>
+              <p class="photo-card__autor">Автор фото: Сергей</p>
+            </div>
+            <button class="photo-card__btn like-btn">
+              <span class="like-btn__counter">143</span>
+            </button>
+          </div>
+        </li>
+
+        <li class="gallery__item photo-card">
+          <a class="photo-card__img" href="#">
+            <img src="https://via.placeholder.com/280x280" alt="фото Дорога на север">
+          </a>
+          <div class="photo-card__wrap">
+            <div class="photo-card__caption-wrap">
+              <b class="photo-card__caption">Дорога на север</b>
+              <p class="photo-card__autor">Автор фото: Пётр</p>
+            </div>
+            <button class="photo-card__btn like-btn">
+              <span class="like-btn__counter">96</span>
+            </button>
+          </div>
+        </li>
+
+        <li class="gallery__item photo-card">
+          <a class="photo-card__img" href="#">
+            <img src="https://via.placeholder.com/280x280" alt="фото Мост дьявола">
+          </a>
+          <div class="photo-card__wrap">
+            <div class="photo-card__caption-wrap">
+              <b class="photo-card__caption">Мост дьявола</b>
+              <p class="photo-card__autor">Автор фото: Антон</p>
+            </div>
+            <button class="photo-card__btn like-btn">
+              <span class="like-btn__counter">254</span>
+            </button>
+          </div>
+        </li>
+      </ul>
+    </section>
+  </main>
+  <footer class="page-footer">
+    <!--Соц.сети-->
+    <section class="social page-footer__social">
+      <b class="social__tag">#visitsedona</b>
+      <ul class="social__list">
+        <li class="social__item social__item--tw">
+          <a href="#">
+            <span class="visually-hidden">Твиттер</span>
+          </a>
+        </li>
+        <li class="social__item social__item--fb">
+          <a href="#">
+            <span class="visually-hidden">Фейсбук</span>
+          </a>
+        </li>
+        <li class="social__item social__item--youtube">
+          <a href="#">
+            <span class="visually-hidden">Ютьюб</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+    <!--Копирайт-->
+    <section class="copyright page-footer__copyright">
+      <a href="https://htmlacademy.ru/intensive/adaptive">Разработано</a>
+    </section>
+  </footer>
+
+</body>
+
+</html>
