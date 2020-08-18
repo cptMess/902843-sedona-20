@@ -1,0 +1,38 @@
+.social__list {
+  display: flex;
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.social__link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 46px;
+  height: 48px;
+
+  margin-right: 7px;
+
+  text-decoration: none;
+  color: #000000;
+  background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+
+    img {
+      opacity: 0.3;
+    }
+  }
+}
+
+.social__link--youtube {
+  margin-right: 0;
+}

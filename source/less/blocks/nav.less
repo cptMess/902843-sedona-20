@@ -1,0 +1,41 @@
+.nav {
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.nav__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  background-color: #81b3d2;
+}
+
+.nav__list-item {
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__list-link {
+  display: block;
+  margin: 0;
+  padding: 8px;
+  text-align: center;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+
+
+.nav__list-link[href] {
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5496bd;
+  }
+}
