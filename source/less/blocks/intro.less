@@ -28,3 +28,52 @@
 }
 
 
+@media (min-width: @tablet-width) {
+  .intro {
+    min-height: 518px;
+
+    background-image: url("/img/bg-back-tablet@1x.jpg");
+    background-size: 768px;
+
+    &::after {
+      content: "";
+      background-image: url("/img/bg-intro-triangle-tablet.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 768px;
+      height: 57px;
+      top: 461px;
+      left: 0;
+    }
+  }
+
+  .intro__title {
+    width: 460px;
+    margin: 0 auto;
+    margin-top: 77px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .intro {
+    background-image: url("/img/bg-back-desktop@1x.jpg");
+    background-size: 1200px;
+
+    &::after {
+      content: "";
+      background-image: url("/img/bg-intro-triangle-desktop.svg");
+      background-repeat: no-repeat;
+      position: absolute;
+      width: 1200px;
+      height: 57px;
+      top: 461px;
+      left: 0;
+    }
+  }
+
+  .intro__title {
+    width: 460px;
+    margin: 0 auto;
+    margin-top: 77px;
+  }
+}

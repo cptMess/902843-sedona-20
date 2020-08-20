@@ -44,3 +44,27 @@
   background-color: #81b3d2;
 }
 
+@media (min-width: @tablet-width) {
+  .book {
+    align-items: center;
+  }
+
+  .book__title {
+    font-size: 30px;
+    margin-top: 57px;
+  }
+
+  .book__text {
+    width: 450px;
+    margin-top: 30px;
+
+    & br {
+      display: block;
+    }
+  }
+
+  .book__find {
+    width: 458px;
+    margin-top: 10px;
+  }
+}

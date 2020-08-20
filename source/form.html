@@ -12,8 +12,12 @@
   <div class="container">
     <header class="header">
       <a class="header__logo" href="index.html">
-        <img class="header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83"
-          alt="логотип сайта sedona">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+          <img class="header__logo-image" src="img/logo-sedona-mobile.svg" width="102" height="83"
+            alt="логотип сайта sedona">
+        </picture>
       </a>
 
       <nav class="nav nav--open">
@@ -51,7 +55,7 @@
 
       <form class="form" action="https://echo.htmlacademy.ru" method="POST">
         <fieldset class="form__wrapper form__about-wrapper">
-          <legend class="form__title form__about-title">Представтесь:</legend>
+          <legend class="form__title form__about-title">представьтесь:</legend>
           <ul class="form__list form__about-list">
             <li class="form__about-item">
               <label class="form__label form__about-label" for="user-name">Имя*:</label>
@@ -75,9 +79,9 @@
           <legend class="form__title form__contacts-title">Контактная информация:</legend>
           <ul class="form__list form__contacts-list">
             <li class="form__contacts-item">
-              <label class="form__label form__contacts-label form__contacts-label--not_desktop"
+              <label class="form__label form__contacts-label form__contacts-label-not_desktop"
                 for="user-phone">Контактный телефон*:</label>
-              <label class="form__label form__contacts-label form_contacts-label-desktop"
+              <label class="form__label form__contacts-label form__contacts-label-desktop"
                 for="user-phone">Телефон*:</label>
               <input id="user-phone" class="form__input form__contacts-phone" type="tel" pattern="[0-9]{7,11}"
                 value="Введите телефон" required>
